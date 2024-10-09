@@ -4,10 +4,17 @@ let numeroSecreto = gerarNumeroAleatorio();
 let tentativas = 1;
 
 function exibirTextoNaTela(tag, texto) {
-    let campo = document.querySelector(tag);
-    campo.innerHTML = texto;
-    responsiveVoice.speak(texto, 'Brazilian Portuguese female', {rate:1.2});
-}
+    
+    // Verificar o idioma do usuário
+    if (navigator.language === 'pt-BR') {
+      document.querySelector('#btn-deny').textContent = 'Negar';
+      document.querySelector('#btn-allow').textContent = 'Permitir';
+    } else if (navigator.language === 'en-US') { 
+      document.querySelector('#btn-deny').textContent = 'Deny'; // Já está em inglês
+      document.querySelector('#btn-allow').textContent = 'Allow'; // Já está em inglês
+    } // Adicione mais idiomas aqui, se necessário
+  }
+
 
 function exibirMensagemInicial() {
     exibirTextoNaTela('h1', 'Jogo do número secreto');
