@@ -41,6 +41,7 @@ Este projeto está licenciado sob a licença MIT - veja o arquivo LICENSE.md par
 Contato:
 
 Gabriel Alves - gabrielsa0510@gmail.com
+
 https://github.com/Gabriel-sa7
 
 Divirta-se jogando! 😄
