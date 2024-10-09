@@ -8,7 +8,8 @@ Este é um jogo simples e divertido onde você precisa adivinhar um número secr
 Como jogar:
 
 Abra o arquivo index.html no seu navegador.
-O jogo irá gerar um número secreto entre 1 e 100.
+O jogo irá gerar um número secreto entre 1 e 25
+.
 Digite seu palpite no campo de entrada e clique em "Chutar".
 O jogo irá te dar dicas se o número secreto é maior ou menor que o seu palpite.
 Continue tentando até acertar o número!
