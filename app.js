@@ -4,20 +4,10 @@ let numeroSecreto = gerarNumeroAleatorio();
 let tentativas = 1;
 
 function exibirTextoNaTela(tag, texto) {
-    
-// Verificar o idioma do usuário
-if (navigator.language === 'pt-BR') {
-    document.querySelector('#btn-deny').textContent = 'Negar';
-    document.querySelector('#btn-allow').textContent = 'Permitir';
-  
-    // Traduzir a mensagem que será lida pela voz
-    let mensagem = "Tradução do jogo permitida!"; 
-    responsiveVoice.speak(mensagem, 'Brazilian Portuguese male', {rate: 1.2});
-  } else {
-    // Manter as mensagens em inglês
-    let mensagem = "Game translation allowed!"; 
-    responsiveVoice.speak(mensagem, 'US English Male', {rate: 1.2}); 
-  }
+    let campo = document.querySelector(tag);
+    campo.innerHTML = texto;
+    responsiveVoice.speak(texto, 'Brazilian Portuguese female', {rate:1.2});
+
 }
 
 function exibirMensagemInicial() {
